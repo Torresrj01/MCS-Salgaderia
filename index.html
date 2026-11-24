@@ -92,6 +92,7 @@
     .gold-gradient-text {
       background: linear-gradient(135deg, #fff2ac 0%, #d4af37 50%, #997a15 100%);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
@@ -138,7 +139,7 @@
     <div class="px-4 h-16 flex items-center justify-between max-w-2xl mx-auto">
       <div class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-full overflow-hidden border border-brand-gold bg-brand-black flex items-center justify-center shadow-md shrink-0">
-          <img src="/MCS/Fotos/Logo_MCS_Salgaderia.jpg" alt="MCS Logo" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&q=80&w=200';">
+          <img src="/MCS-Salgaderia/fotos/Logo_MCS_Salgaderia.jpg" alt="MCS Logo" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&q=80&w=200';">
         </div>
         <div>
           <h1 class="text-base font-extrabold tracking-wide gold-gradient-text leading-tight">MCS SALGADERIA</h1>
@@ -451,27 +452,28 @@
     // --- CATALOG DATA ---
     const PRODUCTS = [
       // Fritos 180g
-      { id: 'f1', category: 'fritos', name: 'Coxinha de Frango (180g)', price: 8.50, desc: 'Massa leve com recheio abundante de frango desfiado.', img: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&q=80&w=300' },
-      { id: 'f2', category: 'fritos', name: 'Kibe Recheado (180g)', price: 8.50, desc: 'Massa tradicional de kibe com carne moída bem temperada.', img: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&q=80&w=300' },
-      { id: 'f3', category: 'fritos', name: 'Bolinha de Queijo (180g)', price: 8.50, desc: 'Queijo muçarela derretido com casca crocante.', img: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=300' },
-      { id: 'f4', category: 'fritos', name: 'Risoles Presunto e Queijo (180g)', price: 8.50, desc: 'Recheio cremoso de presunto e queijo derretido.', img: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&q=80&w=300' },
+      { id: 'f1', category: 'fritos', name: 'Coxinha de Frango / Catupiry(180g)', price: 9.00, desc: 'Massa leve com recheio abundante de frango e catupiry.', img: '/MCS-Salgaderia/fotos/lanche/coxinha_frango_catupiry.jpeg' },
+      { id: 'f2', category: 'fritos', name: 'Coxinha de Costela (180g)', price: 11.00, desc: 'Massa leve com recheio de costela bovina e cream cheese.', img: '/MCS-Salgaderia/fotos/lanche/coxinha_costela.jpeg' },
+      { id: 'f3', category: 'fritos', name: 'Coxinha de Calabresa (180g)', price: 10.00, desc: 'Massa leve com recheio de linguiça calabresa e catupiry.', img: '/MCS-Salgaderia/fotos/lanche/coxinha_calabresa.jpeg' },
+      { id: 'f4', category: 'fritos', name: 'Coxinha de frango (180g)', price: 8.00, desc: 'Massa leve com recheio abundante de frango fesfiado.', img: '/MCS-Salgaderia/fotos/lanche/coxinha_frango.jpeg' },
       
       // Assados
-      { id: 'a1', category: 'assados', name: 'Joelho Presunto e Queijo', price: 9.00, desc: 'Massa assada macia e recheada com presunto e queijo.', img: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&q=80&w=300' },
-      { id: 'a2', category: 'assados', name: 'Hambúrguer Assado', price: 10.00, desc: 'Carne artesanal assada com queijo e tempero da casa.', img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=300' },
-      { id: 'a3', category: 'assados', name: 'Esfiha de Carne', price: 8.50, desc: 'Massa leve assada com tempero árabe tradicional.', img: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&q=80&w=300' },
+      { id: 'a1', category: 'assados', name: 'Joelho Presunto e Queijo', price: 9.00, desc: 'Massa assada macia e recheada com presunto e queijo.', img: '/MCS-Salgaderia/fotos/lanche/joelho_queijo_presunto.jpeg' },
+      { id: 'a2', category: 'assados', name: 'Hambúrguer Assado', price: 12.00, desc: 'Massa leve assada com Carne artesanal, queijo mussarela, presunto e cheddan.', img: '/MCS-Salgaderia/fotos/lanche/hamburge.jpeg' },
+      { id: 'a3', category: 'assados', name: 'Baguete de Calabresa', price: 16.00, desc: 'Massa leve assada com recheio de linguiça calabresa, azeitona, queijo mussarela e catupiry.', img: '/MCS-Salgaderia/fotos/lanche/baguete_calabresa.jpeg' },
+      { id: 'a4', category: 'assados', name: 'Baguete de Pernil', price: 18.00, desc: 'Massa leve assada com recheio de pernil suíno e creeam cheese.', img: '/MCS-Salgaderia/fotos/lanche/baguete_pernil.jpeg' },
 
       // Porção 20g (Mínimo 30 unidades)
-      { id: 'p1', category: 'porcoes', name: 'Porção Salgadinhos Fritos (20g)', price: 1.10, isPorcao: true, minQty: 30, desc: 'Monte com seus sabores favoritos (Mínimo 30 unidades).', img: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&q=80&w=300' },
+      { id: 'p1', category: 'porcoes', name: 'Porção Salgadinhos Fritos (20g)', price: 1.10, isPorcao: true, minQty: 30, desc: 'Monte com seus sabores favoritos (Mínimo 30 unidades).', img: '/MCS-Salgaderia/fotos/festa/salgadinhos_fritos.jpeg' },
 
       // Combos Festa
-      { id: 'c1', category: 'combos', name: 'Combo Festa 1 (30 Salgados)', price: 45.00, isCombo: true, fritosReq: 20, assadosReq: 10, desc: '20 Salgados Fritos + 10 Assados à sua escolha.', img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=300' },
-      { id: 'c2', category: 'combos', name: 'Combo Festa 2 (50 Salgados)', price: 72.00, isCombo: true, fritosReq: 35, assadosReq: 15, desc: '35 Salgados Fritos + 15 Assados à sua escolha.', img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=300' },
-      { id: 'c3', category: 'combos', name: 'Combo Festa 3 (100 Salgados)', price: 135.00, isCombo: true, fritosReq: 70, assadosReq: 30, desc: '70 Salgados Fritos + 30 Assados à sua escolha.', img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=300' },
+      { id: 'c1', category: 'combos', name: 'Combo Festa 1 (30 Salgados)', price: 45.00, isCombo: true, fritosReq: 20, assadosReq: 10, desc: '20 Salgados Fritos + 10 Assados à sua escolha.', img: '/MCS-Salgaderia/fotos/festa/salgadinhos_diversos.jpeg' },
+      { id: 'c2', category: 'combos', name: 'Combo Festa 2 (50 Salgados)', price: 72.00, isCombo: true, fritosReq: 35, assadosReq: 15, desc: '35 Salgados Fritos + 15 Assados à sua escolha.', img: '/MCS-Salgaderia/fotos/festa/salgadinhos_diversos.jpeg' },
+      { id: 'c3', category: 'combos', name: 'Combo Festa 3 (100 Salgados)', price: 135.00, isCombo: true, fritosReq: 70, assadosReq: 30, desc: '70 Salgados Fritos + 30 Assados à sua escolha.', img: '/MCS-Salgaderia/fotos/festa/salgadinhos_diversos.jpeg' },
 
       // Doces
-      { id: 'd1', category: 'doces', name: 'Churros Doce de Leite (20g)', price: 1.50, desc: 'Crocante por fora, macio e recheado por dentro.', img: 'https://images.unsplash.com/photo-1624371414361-e670ef4889d6?auto=format&fit=crop&q=80&w=300' },
-      { id: 'd2', category: 'doces', name: 'Carolina Recheada', price: 2.00, desc: 'Massa choux leve recheada com doce de leite caseiro.', img: 'https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=300' }
+      { id: 'd1', category: 'doces', name: 'Churros Doce de Leite (20g)', price: 1.50, desc: 'Crocante por fora, macio e recheado por dentro.', img: '/MCS-Salgaderia/fotos/lanche/churros.jpeg' },
+      { id: 'd2', category: 'doces', name: 'Carolina Recheada', price: 2.00, desc: 'Massa choux leve recheada com doce de leite caseiro.', img: '/MCS-Salgaderia/fotos/lanche/carolinas.jpeg' }
     ];
 
     const FLAVORS_FRITOS = ['Coxinha de Frango', 'Bolinha de Queijo', 'Kibe Tradicional', 'Risoles Presunto/Queijo', 'Calabresa com Queijo', 'Enroladinho Salsicha'];
